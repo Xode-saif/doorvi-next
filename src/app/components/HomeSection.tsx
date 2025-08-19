@@ -20,95 +20,95 @@ const HomeSection = () => {
   useEffect(() => {
     getGeoInfo();
   }, [])
-  useGSAP(() => {
-    const headingSplit = new SplitText('.heading', { type: 'lines' })
-    const headingSplitForGradiant = new SplitText('.gradiant', { type: 'chars' })
-    const subtitles = new SplitText('.subtitle', { type: 'lines' })
-    const useDoorViSubtitle = new SplitText('.usedoorvisubtitle', { type: 'lines' })
-    headingSplitForGradiant.chars.forEach((char) => char.classList.add('text-gradient'))
-    gsap.from(headingSplit.lines, {
-      opacity: 0,
-      yPercent: 100,
-      duration: 1.8,
-      ease: 'expo.out',
-      stagger: 0.05,
-    })
-    gsap.from(subtitles.lines, {
-      opacity: 0,
-      yPercent: 100,
-      duration: 1.8,
-      ease: 'expo.out',
-      stagger: 0.06,
-      delay: 1,
-    })
-    gsap.from('#image', {
-      opacity: 0,
-      y: 100,
-      duration: 1,
-      ease: 'power1.in',
-      // delay: 1,
-    })
-    //second section animation
-    const scrollTimeLineSectionTwo = gsap.timeline({
-      scrollTrigger: {
-        trigger: '#section_two',
-        start: 'top center'
-      }
-    })
-    scrollTimeLineSectionTwo.from('.group', {
-      opacity: 0, duration: 1, ease: 'power1.inOut', stagger: 0.4,
-    })
-    scrollTimeLineSectionTwo.from('.usedoorvisubtitle', {
-      opacity: 0,
-      yPercent: 100,
-      duration: 1,
-      ease: 'expo.out',
-      stagger: 0.06,
-      // delay: 0.5,
-    }, "-=1")
+  // useGSAP(() => {
+  //   const headingSplit = new SplitText('.heading', { type: 'lines' })
+  //   const headingSplitForGradiant = new SplitText('.gradiant', { type: 'chars' })
+  //   const subtitles = new SplitText('.subtitle', { type: 'lines' })
+  //   const useDoorViSubtitle = new SplitText('.usedoorvisubtitle', { type: 'lines' })
+  //   headingSplitForGradiant.chars.forEach((char) => char.classList.add('text-gradient'))
+  //   gsap.from(headingSplit.lines, {
+  //     opacity: 0,
+  //     yPercent: 100,
+  //     duration: 1.8,
+  //     ease: 'expo.out',
+  //     stagger: 0.05,
+  //   })
+  //   gsap.from(subtitles.lines, {
+  //     opacity: 0,
+  //     yPercent: 100,
+  //     duration: 1.8,
+  //     ease: 'expo.out',
+  //     stagger: 0.06,
+  //     delay: 1,
+  //   })
+  //   gsap.from('#image', {
+  //     opacity: 0,
+  //     y: 100,
+  //     duration: 1,
+  //     ease: 'power1.in',
+  //     // delay: 1,
+  //   })
+  //   //second section animation
+  //   const scrollTimeLineSectionTwo = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: '#section_two',
+  //       start: 'top center'
+  //     }
+  //   })
+  //   scrollTimeLineSectionTwo.from('.group', {
+  //     opacity: 0, duration: 1, ease: 'power1.inOut', stagger: 0.4,
+  //   })
+  //   scrollTimeLineSectionTwo.from('.usedoorvisubtitle', {
+  //     opacity: 0,
+  //     yPercent: 100,
+  //     duration: 1,
+  //     ease: 'expo.out',
+  //     stagger: 0.06,
+  //     // delay: 0.5,
+  //   }, "-=1")
 
-    // why choose us section
-    const scrollTimeLineWhyChooseUs = gsap.timeline({
-      scrollTrigger: {
-        trigger: '#whyChoose',
-        start: 'top bottom'
-      }
-    })
-    scrollTimeLineWhyChooseUs.fromTo('#whyChooseImage', { opacity: 0, yPercent: 50 }, {
-      yPercent: 0, opacity: 1, duration: 1.8, ease: 'power1.inOut'
-    })
-    scrollTimeLineWhyChooseUs.from('.whyChoosePara', {
-      opacity: 0,
-      yPercent: 100,
-      duration: 1,
-      ease: 'expo.out',
-      stagger: 0.06,
-      // delay: 0.5,
-    }, "-=1")
+  //   // why choose us section
+  //   const scrollTimeLineWhyChooseUs = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: '#whyChoose',
+  //       start: 'top bottom'
+  //     }
+  //   })
+  //   scrollTimeLineWhyChooseUs.fromTo('#whyChooseImage', { opacity: 0, yPercent: 50 }, {
+  //     yPercent: 0, opacity: 1, duration: 1.8, ease: 'power1.inOut'
+  //   })
+  //   scrollTimeLineWhyChooseUs.from('.whyChoosePara', {
+  //     opacity: 0,
+  //     yPercent: 100,
+  //     duration: 1,
+  //     ease: 'expo.out',
+  //     stagger: 0.06,
+  //     // delay: 0.5,
+  //   }, "-=1")
 
-    // doorvi works section
-    const scrollTimeLineDoorViWorks = gsap.timeline({
-      scrollTrigger:{
-        trigger:"#doorviWorks",
-        start:"top center"
-      }
-    })
-    scrollTimeLineDoorViWorks.from('.card',{
-      opacity:0,
-      yPercent:50,
-      stagger:0.5,
-      duration:1
-    })
+  //   // doorvi works section
+  //   const scrollTimeLineDoorViWorks = gsap.timeline({
+  //     scrollTrigger:{
+  //       trigger:"#doorviWorks",
+  //       start:"top center"
+  //     }
+  //   })
+  //   scrollTimeLineDoorViWorks.from('.card',{
+  //     opacity:0,
+  //     yPercent:50,
+  //     stagger:0.5,
+  //     duration:1
+  //   })
     
-  }, [])
-  useGSAP(() => {
-    gsap.fromTo('#section3Img', { opacity: 0, yPercent: 50 }, {
-      yPercent: 0, opacity: 1, duration: 1.8, ease: 'power1.inOut'
-    })
-    gsap.fromTo('.about', { yPercent: 20, opacity: 0 }, {
-      yPercent: 0, opacity: 100, duration: 1, ease: 'power1.inOut'
-    })
-  }, [index])
+  // }, [])
+  // useGSAP(() => {
+  //   gsap.fromTo('#section3Img', { opacity: 0, yPercent: 50 }, {
+  //     yPercent: 0, opacity: 1, duration: 1.8, ease: 'power1.inOut'
+  //   })
+  //   gsap.fromTo('.about', { yPercent: 20, opacity: 0 }, {
+  //     yPercent: 0, opacity: 100, duration: 1, ease: 'power1.inOut'
+  //   })
+  // }, [index])
   // const startAutoChange = () => {
   //   if(intervalRef.current) return;
   //   intervalRef.current = setInterval(() => {
@@ -175,7 +175,7 @@ const HomeSection = () => {
           {/* Right column - Image */}
           <div className="my-auto p-2">
             <div id="image" className=" text-center flex items-center justify-center">
-              <Image src={'/assets/homePage.jpeg'} alt="Home Page" width={1800} height={1000} />
+              <Image src={'/assets/homePage.jpeg'} alt="Home Page" width={1800} height={1000} priority />
             </div>
           </div>
         </div>
@@ -342,11 +342,11 @@ const HomeSection = () => {
           <h2 className="font-semibold text-[2.986rem] text-gray-900 ">Why Choose <span className='bg-gradient-to-r from-[#0470ec] to-indigo-400 text-transparent bg-clip-text inline-block'>DoorVi</span>?</h2>
 
           <div className="grid lg:grid-cols-3 gap-x-24 gap-y-12 lg:pt-15">
-            <div className="col-span-1 relative flex items-center h-[280px] w-[280px] md:w-[350px] md:h-[350px] lg:h-[400px] lg:w-[380px] section3 my-auto mx-auto" id='whyChooseImage'>
+            <div className="col-span-1 relative flex items-center h-[280px] w-[280px] md:w-[600px] md:h-[600px] lg:h-[280px] lg:w-[280px] xl:h-[400px] xl:w-[380px] section3 my-auto mx-auto" id='whyChooseImage'>
               <Image
                 src='/assets/whyChoseUs.jpg'
                 alt="Mobile App Interface"
-                className="w-full "
+                className="w-full"
                 fill
               />
             </div>

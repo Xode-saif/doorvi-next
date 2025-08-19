@@ -64,7 +64,9 @@ const Footer = () => {
 
                 <footer className=' itmes-center flex flex-col md:flex-row justify-between p-7 gap-2 md:gap-7'>
                     <div className='w-[300px] md:pl-10'>
-                        <Image src="/assets/logo.png" alt='DoorVi_logo' width={200} height={100} />
+                        <div className='h-[100px] w-[200px] '>
+                            <Image src="/assets/logo.png" alt='DoorVi_logo' width={200} height={100} priority />
+                        </div>
                         <p className=' text-gray-500 text-[16px] py-1'><span className='text-black text-[18px]'>Registered Address</span>: 417, Four Storey, Raghubir Nagar, Tagore Garden, New Delhi, West Delhi-110027</p>
                         <p className=' text-gray-500 text-[16px] py-1'><span className='text-black text-[18px]'>Development Center</span>: 108 1st Floor, iThum, Sector - 62, Noida, India (201301)</p>
                         <p className=' text-gray-500 hover:text-gray-600 text-[16px] '><span className='text-black text-[18px]'>Email:</span> <span className="text-[16px] inline-block hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"onClick={() => {
@@ -144,12 +146,14 @@ const Footer = () => {
                             <h1 className='text-[18px]'>Install App</h1>
                             <p className='text-gray-500 text-[16px] pt-2'>From the app store or play store</p>
                             <div className='py-4 flex gap-4'>
-                                <Link href={'https://apps.apple.com/in/app/doorvi-door-video-calling/id1634023696'} target='_blank'> <Image src='/assets/app-store.jpg' width={100} height={100} alt='app_store_logo' className='hover:scale-105 transition-transform duration-300 ease-in-out'/></Link>
-                                <Link href={'https://play.google.com/store/apps/details?id=com.doorvi'} target='_blank'> <Image src='/assets/google-play.jpg' width={100} height={100} alt='play_store_logo' className='hover:scale-105 transition-transform duration-300 ease-in-out'/></Link>
+                                <Link href={'https://apps.apple.com/in/app/doorvi-door-video-calling/id1634023696'} target='_blank'> <Image src='/assets/app-store.jpg' width={100} height={100} alt='app_store_logo' className='hover:scale-105 transition-transform duration-300 ease-in-out w-[100px] h-[33px] aspect-[256/85] ' priority/></Link>
+                                <Link href={'https://play.google.com/store/apps/details?id=com.doorvi'} target='_blank'> <Image src='/assets/google-play.jpg' width={100} height={100} alt='play_store_logo' className='hover:scale-105 transition-transform duration-300 ease-in-out w-[100px] h-[33px] aspect-[256/85]' priority/></Link>
                             </div>
                             <div >
                                 <p className='text-gray-500 text-[16px]'>Secured Payment Gateways</p>
-                                <Image src={'/assets/payment-method.png'} alt='payment_method' width={200} height={200} className='py-4' />
+                                <div className='h-[200px] w-[200px] '>
+                                    <Image src={'/assets/payment-method.png'} alt='payment_method' width={200} height={200} className='py-4' priority />
+                                </div>
                             </div>
                             <div className=' flex flex-col gap-2'>
                                 <h1 className='text-[18px]'>Social</h1>

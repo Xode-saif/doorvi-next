@@ -76,7 +76,7 @@ export default function InvestmentPartners() {
 
   return (
     <section className="py-15">
-      <div className="px-4 sm:px-10 py-6 sm:py-10">
+      <div className=" py-6 sm:py-10">
         <h2 className="text-[2.986rem] 2xl:text-[6rem] font-bold text-center text-gray-800 mb-6 sm:mb-10">Our Integration Partners</h2>        
         <div className="relative" ref={carouselRef}>
           {/* Carousel Navigation Buttons */}
@@ -97,27 +97,27 @@ export default function InvestmentPartners() {
           </button>
           
           {/* Carousel Content */}
-          <div className="overflow-hidden mx-8 sm:mx-12 2xl:gap-10 ">
+          <div className="overflow-hidden mx-8 sm:mx-12 2xl:gap-10">
             <div 
-              className="flex sm:justify-center sm:items-center transition-transform duration-500 ease-in-out" 
+              className="flex sm:justify-center sm:items-center transition-transform duration-500 ease-in-out 2xl:gap-3  " 
               style={{ transform: `translateX(-${currentIndex * (100 / visibleItems)}%)` }}
             >
               {partners.map((partner) => (
                 <div 
                   key={partner.id} 
-                  className={`px-2 sm:px-4 flex-shrink-0 flex justify-center items-center`}
+                  className={`px-2 sm:px-4  flex-shrink-0 flex justify-center items-center`}
                   style={{ width: `${100 / visibleItems}%` }}
                 >
                   <a 
                     href={partner.webLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="block p-3 bg-white rounded-lg  hover:shadow-md transition-shadow duration-300"
+                    className="block  bg-white rounded-lg  hover:shadow-md transition-shadow duration-300"
                   >
                     <div className=" flex items-center justify-center">
                       <Image
-                        width={400}
-                        height={400} 
+                        width={800}
+                        height={800} 
                         src={partner.logo} 
                         alt={`${partner.name} logo`} 
                         className="max-h-full max-w-full object-contain"

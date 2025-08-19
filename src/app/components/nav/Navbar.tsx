@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className='md:px-5 fixed z-50 w-full'>
         <div className='flex justify-between items-center'>
-            <a href="#home" className='logo flex items-center gap-2 relative w-[170px] h-[70px]'>
+            <a href="#home" className='logo flex items-center gap-2 relative aspect-[2477/977] w-[170px] h-[70px]'>
                 <Image src="/assets/logo.png" alt='logo' fill/>
             </a>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
                 <ul className='flex gap-2 md:gap-5 text-[16px] leading-[20px] text-[#555555] font-medium '>
                     {navLinks.map((link)=>(
                         <li key={link.id}>
-                            <Link href={`#${link.id}`} className='hover:text-[#242424]'>{link.title}</Link>
+                            <Link href={`${link.link}`} className='hover:text-[#242424]'>{link.title}</Link>
                         </li>
                     ))}
                 </ul>

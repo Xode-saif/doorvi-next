@@ -3,6 +3,7 @@ import { Bell, Cable, Eye, Lock, Phone, Scan, ScanEye, SquareActivityIcon, User2
 type NavLinkType = {
   id: string;
   title: string;
+  link:string;
 };
 export type Feature = {
   icon: React.ElementType;
@@ -22,6 +23,7 @@ const navLinks:NavLinkType[] = [
  {
 	id: "home",
 	title: "Home",
+  link:"https://doorvi-red.vercel.app/",
  },
 //  {
 // 	id: "shop",
@@ -30,10 +32,12 @@ const navLinks:NavLinkType[] = [
  {
 	id: "blog",
 	title: "Blog",
+  link:"https://www.doorvi.co/blogs",
  },
  {
 	id: "contact",
 	title: "Contact",
+  link:"https://www.doorvi.co/contact"
  },
 //  {
 // 	id: "privacy policy",
