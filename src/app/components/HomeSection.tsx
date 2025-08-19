@@ -529,7 +529,7 @@ const HomeSection = () => {
         <IntegrationPartner />
         <div className="relative m-auto h-[100vh]  ">
           <iframe
-            // loading='lazy'
+            loading='lazy'
             src={
               ["br", "pt"].includes(country?.toLowerCase())
                 ? "https://www.youtube.com/embed/naJ8jySg_Ok"
