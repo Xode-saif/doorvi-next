@@ -7,25 +7,25 @@ import gsap from 'gsap'
 import Link from 'next/link'
 
 const Navbar = () => {
-    useGSAP(()=>{
-        const navTween = gsap.timeline({
-            scrollTrigger:{
-                trigger:'nav',
-                start:'bottom up'   //bottom of navbar reaches the top of the view port then transition will start
-            }
-        });
-        navTween.fromTo('nav',{backgroundColor:'transparent'},
-            {
-                backgroundColor:'#FFFFFF4D', 
-                backdropFilter:'blur(10px)',
-                duration:1,
-                ease:'power1.inOut'
-            }
-        );
-    })
+    // useGSAP(()=>{
+    //     const navTween = gsap.timeline({
+    //         scrollTrigger:{
+    //             trigger:'nav',
+    //             start:'bottom up'   //bottom of navbar reaches the top of the view port then transition will start
+    //         }
+    //     });
+    //     navTween.fromTo('nav',{backgroundColor:'transparent'},
+    //         {
+    //             backgroundColor:'#FFFFFF4D', 
+    //             backdropFilter:'blur(10px)',
+    //             duration:1,
+    //             ease:'power1.inOut'
+    //         }
+    //     );
+    // })
   return (
     <nav className='md:px-5 fixed z-50 w-full'>
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between items-center backdrop-blur-[10px]'>
             <a href="#home" className='logo flex items-center gap-2 relative aspect-[2477/977] w-[170px] h-[70px]'>
                 <Image src="/assets/logo.png" alt='logo' fill/>
             </a>

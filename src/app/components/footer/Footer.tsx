@@ -7,7 +7,7 @@ const Footer = () => {
     // const pathname = usePathname()
     return (
         <>
-            <div className='footerWrapper'>
+            <div className='footerWrapper' >
                 {/* {pathname === "/shop" && <> */}
                 {/* <div className='footerBoxes'>
                         <div className='container-fluid'>
