@@ -30,11 +30,11 @@ const Navbar = () => {
                 <Image src="/assets/logo.png" alt='logo' fill/>
             </a>
 
-            <div className='flex items-center justify-center gap-5 px-5'>
-                <Link href="https://www.doorvi.co/shop"><button className='rounded-lg px-4 py-1 text-white bg-gradient-to-r from-blue-400 to-blue-600 hidden md:block cursor-pointer' >Shop</button></Link>
+            <div className='flex items-center justify-center gap-2 sm:gap-5 px-5'>
+                <Link href="https://www.doorvi.co/shop"><button className='rounded-lg px-2 sm:px-4 py-1 text-white bg-gradient-to-r from-blue-400 to-blue-600  md:block cursor-pointer' >Shop</button></Link>
                 <ul className='flex gap-2 md:gap-5 text-[16px] leading-[20px] text-[#555555] font-medium '>
                     {navLinks.map((link)=>(
-                        <li key={link.id}>
+                        <li key={link.id} className={`${link.id === 'blog'?'hidden sm:block':'inline-block'}`}>
                             <Link href={`${link.link}`} className='hover:text-[#242424]'>{link.title}</Link>
                         </li>
                     ))}

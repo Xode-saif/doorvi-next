@@ -23,7 +23,7 @@ const navLinks:NavLinkType[] = [
  {
 	id: "home",
 	title: "Home",
-  link:"https://doorvi-red.vercel.app/",
+  link:"/",
  },
 //  {
 // 	id: "shop",

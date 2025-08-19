@@ -148,6 +148,9 @@ const HomeSection = () => {
   };
   return (
     <div>
+      {/* <div className='sm:hidden z-10 bottom-3 right-3 fixed bg-blue-400 backdrop-blur-[10px] h-15 w-40 rounded-lg flex items-center justify-center '>
+        <h1 className='font-semibold text-white text-lg '>Shop Now</h1>
+      </div> */}
       <section className="pt-15 px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen p-3">
           {/* Left column - Text content */}
