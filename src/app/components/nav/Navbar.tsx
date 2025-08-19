@@ -26,15 +26,15 @@ const Navbar = () => {
   return (
     <nav className='md:px-5 fixed z-50 w-full'>
         <div className='flex justify-between items-center backdrop-blur-[10px]'>
-            <a href="#home" className='logo flex items-center gap-2 relative aspect-[2477/977] w-[170px] h-[70px]'>
+            <Link href="/" className='logo flex items-center gap-2 relative aspect-[2477/977] w-[170px] h-[70px]'>
                 <Image src="/assets/logo.png" alt='logo' fill/>
-            </a>
+            </Link>
 
             <div className='flex items-center justify-center gap-2 sm:gap-5 px-5'>
                 <Link href="https://www.doorvi.co/shop"><button className='rounded-lg px-2 sm:px-4 py-1 text-white bg-gradient-to-r from-blue-400 to-blue-600  md:block cursor-pointer' >Shop</button></Link>
                 <ul className='flex gap-2 md:gap-5 text-[16px] leading-[20px] text-[#555555] font-medium '>
                     {navLinks.map((link)=>(
-                        <li key={link.id} className={`${link.id === 'blog'?'hidden sm:block':'inline-block'}`}>
+                        <li key={link.id} className={`${link.id === 'home'?'hidden sm:block':'inline-block'}`}>
                             <Link href={`${link.link}`} className='hover:text-[#242424]'>{link.title}</Link>
                         </li>
                     ))}

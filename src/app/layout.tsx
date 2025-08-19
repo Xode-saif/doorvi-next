@@ -22,8 +22,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DoorVi",
-  description: "Next gen Doorbell",
+  title: "QR Code Based Intercom | Access Control | Visitor Management",
+  description: "Introducing DoorVi, A revolutionary smart video call solution. Securely connect with visitors via QR Code, no app required. Enjoy privacy and convenience with our weatherproof units and proprietary technology. Upgrade your doorbell experience today!",
   icons:{
     icon:'/assets/favicon.png'
   }
