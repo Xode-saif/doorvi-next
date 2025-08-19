@@ -1,5 +1,10 @@
 "use client"
 
+import { Metadata } from "next"
+
+// export const metadata:Metadata = {
+//     title:"DoorVi - Terms of Use",
+// }
 export default function TermsAndCon() {
     return (
         <div className='py-20 max-w-[80%] flex flex-col itmes-center mx-auto '>

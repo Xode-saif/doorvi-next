@@ -95,7 +95,7 @@ const Footer = () => {
                                 <h1 className='text-[18px]'>Legal</h1>
                                 <ul className=' text-gray-500 text-[16px] leading-6 pt-2'>
                                     <li className='hover:text-gray-600 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer'><Link href="/terms">Terms & Conditions</Link></li>
-                                    <li className='hover:text-gray-600 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer'>Privacy Policy</li>
+                                    <li className='hover:text-gray-600 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer'><Link href="/privacy-policy">Privacy Policy</Link></li>
                                     <li className='hover:text-gray-600 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer'>Cancellation policy</li>
                                     <li className='leading-6 hover:text-gray-600 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer'><Link href="https://www.doorvi.co/refund-policy">Refund Policy</Link></li>
                                 </ul>

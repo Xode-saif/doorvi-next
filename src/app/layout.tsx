@@ -5,6 +5,7 @@ import Navbar from "./components/nav/Navbar";
 
 import { Inter } from "next/font/google";
 import Footer from "./components/footer/Footer";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,8 +25,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "QR Code Based Intercom | Access Control | Visitor Management",
   description: "Introducing DoorVi, A revolutionary smart video call solution. Securely connect with visitors via QR Code, no app required. Enjoy privacy and convenience with our weatherproof units and proprietary technology. Upgrade your doorbell experience today!",
-  icons:{
-    icon:'/assets/favicon.png'
+  icons: {
+    icon: '/assets/favicon.png'
   }
 };
 
@@ -36,12 +37,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script  async src="https://www.googletagmanager.com/gtag/js?id=G-4DM73NVM1M"></Script>
+        <Script id="gtag-init">
+         {` window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-4DM73NVM1M');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
