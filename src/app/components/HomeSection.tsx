@@ -20,95 +20,95 @@ const HomeSection = () => {
   useEffect(() => {
     getGeoInfo();
   }, [])
-  // useGSAP(() => {
-  //   const headingSplit = new SplitText('.heading', { type: 'lines' })
-  //   const headingSplitForGradiant = new SplitText('.gradiant', { type: 'chars' })
-  //   const subtitles = new SplitText('.subtitle', { type: 'lines' })
-  //   const useDoorViSubtitle = new SplitText('.usedoorvisubtitle', { type: 'lines' })
-  //   headingSplitForGradiant.chars.forEach((char) => char.classList.add('text-gradient'))
-  //   gsap.from(headingSplit.lines, {
-  //     opacity: 0,
-  //     yPercent: 100,
-  //     duration: 1.8,
-  //     ease: 'expo.out',
-  //     stagger: 0.05,
-  //   })
-  //   gsap.from(subtitles.lines, {
-  //     opacity: 0,
-  //     yPercent: 100,
-  //     duration: 1.8,
-  //     ease: 'expo.out',
-  //     stagger: 0.06,
-  //     delay: 1,
-  //   })
-  //   gsap.from('#image', {
-  //     opacity: 0,
-  //     y: 100,
-  //     duration: 1,
-  //     ease: 'power1.in',
-  //     // delay: 1,
-  //   })
-  //   //second section animation
-  //   const scrollTimeLineSectionTwo = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: '#section_two',
-  //       start: 'top center'
-  //     }
-  //   })
-  //   scrollTimeLineSectionTwo.from('.group', {
-  //     opacity: 0, duration: 1, ease: 'power1.inOut', stagger: 0.4,
-  //   })
-  //   scrollTimeLineSectionTwo.from('.usedoorvisubtitle', {
-  //     opacity: 0,
-  //     yPercent: 100,
-  //     duration: 1,
-  //     ease: 'expo.out',
-  //     stagger: 0.06,
-  //     // delay: 0.5,
-  //   }, "-=1")
+  useGSAP(() => {
+    const headingSplit = new SplitText('.heading', { type: 'lines' })
+    const headingSplitForGradiant = new SplitText('.gradiant', { type: 'chars' })
+    const subtitles = new SplitText('.subtitle', { type: 'lines' })
+    const useDoorViSubtitle = new SplitText('.usedoorvisubtitle', { type: 'lines' })
+    headingSplitForGradiant.chars.forEach((char) => char.classList.add('text-gradient'))
+    gsap.from(headingSplit.lines, {
+      opacity: 0,
+      yPercent: 100,
+      duration: 1.8,
+      ease: 'expo.out',
+      stagger: 0.05,
+    })
+    gsap.from(subtitles.lines, {
+      opacity: 0,
+      yPercent: 100,
+      duration: 1.8,
+      ease: 'expo.out',
+      stagger: 0.06,
+      delay: 1,
+    })
+    gsap.from('#image', {
+      opacity: 0,
+      y: 100,
+      duration: 1,
+      ease: 'power1.in',
+      // delay: 1,
+    })
+    //second section animation
+    const scrollTimeLineSectionTwo = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#section_two',
+        start: 'top center'
+      }
+    })
+    scrollTimeLineSectionTwo.from('.group', {
+      opacity: 0, duration: 1, ease: 'power1.inOut', stagger: 0.4,
+    })
+    scrollTimeLineSectionTwo.from('.usedoorvisubtitle', {
+      opacity: 0,
+      yPercent: 100,
+      duration: 1,
+      ease: 'expo.out',
+      stagger: 0.06,
+      // delay: 0.5,
+    }, "-=1")
 
-  //   // why choose us section
-  //   const scrollTimeLineWhyChooseUs = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: '#whyChoose',
-  //       start: 'top bottom'
-  //     }
-  //   })
-  //   scrollTimeLineWhyChooseUs.fromTo('#whyChooseImage', { opacity: 0, yPercent: 50 }, {
-  //     yPercent: 0, opacity: 1, duration: 1.8, ease: 'power1.inOut'
-  //   })
-  //   scrollTimeLineWhyChooseUs.from('.whyChoosePara', {
-  //     opacity: 0,
-  //     yPercent: 100,
-  //     duration: 1,
-  //     ease: 'expo.out',
-  //     stagger: 0.06,
-  //     // delay: 0.5,
-  //   }, "-=1")
+    // why choose us section
+    const scrollTimeLineWhyChooseUs = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#whyChoose',
+        start: 'top bottom'
+      }
+    })
+    scrollTimeLineWhyChooseUs.fromTo('#whyChooseImage', { opacity: 0, yPercent: 50 }, {
+      yPercent: 0, opacity: 1, duration: 1.8, ease: 'power1.inOut'
+    })
+    scrollTimeLineWhyChooseUs.from('.whyChoosePara', {
+      opacity: 0,
+      yPercent: 100,
+      duration: 1,
+      ease: 'expo.out',
+      stagger: 0.06,
+      // delay: 0.5,
+    }, "-=1")
 
-  //   // doorvi works section
-  //   const scrollTimeLineDoorViWorks = gsap.timeline({
-  //     scrollTrigger:{
-  //       trigger:"#doorviWorks",
-  //       start:"top center"
-  //     }
-  //   })
-  //   scrollTimeLineDoorViWorks.from('.card',{
-  //     opacity:0,
-  //     yPercent:50,
-  //     stagger:0.5,
-  //     duration:1
-  //   })
+    // doorvi works section
+    const scrollTimeLineDoorViWorks = gsap.timeline({
+      scrollTrigger:{
+        trigger:"#doorviWorks",
+        start:"top center"
+      }
+    })
+    scrollTimeLineDoorViWorks.from('.card',{
+      opacity:0,
+      yPercent:50,
+      stagger:0.5,
+      duration:1
+    })
     
-  // }, [])
-  // useGSAP(() => {
-  //   gsap.fromTo('#section3Img', { opacity: 0, yPercent: 50 }, {
-  //     yPercent: 0, opacity: 1, duration: 1.8, ease: 'power1.inOut'
-  //   })
-  //   gsap.fromTo('.about', { yPercent: 20, opacity: 0 }, {
-  //     yPercent: 0, opacity: 100, duration: 1, ease: 'power1.inOut'
-  //   })
-  // }, [index])
+  }, [])
+  useGSAP(() => {
+    gsap.fromTo('#section3Img', { opacity: 0, yPercent: 50 }, {
+      yPercent: 0, opacity: 1, duration: 1.8, ease: 'power1.inOut'
+    })
+    gsap.fromTo('.about', { yPercent: 20, opacity: 0 }, {
+      yPercent: 0, opacity: 100, duration: 1, ease: 'power1.inOut'
+    })
+  }, [index])
   // const startAutoChange = () => {
   //   if(intervalRef.current) return;
   //   intervalRef.current = setInterval(() => {
