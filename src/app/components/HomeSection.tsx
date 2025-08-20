@@ -196,7 +196,7 @@ const HomeSection = () => {
             </h1>
 
             {/* Content Grid */}
-            <div className="grid md:grid-cols-2 gap-12 pb-16">
+            <div className="grid md:grid-cols-2 gap-12 pb-16 ">
               {/* Apartment Buildings */}
               <div className="group">
                 <div className="relative overflow-hidden rounded-lg mb-6">
@@ -490,7 +490,7 @@ const HomeSection = () => {
               alt="Modern apartment building"
               width={300}
               height={400}
-              className="w-[500px] lg:w-[1231px] lg:h-[350px] m-auto"
+              className="w-[500px] lg:w-[1231px] lg:h-[250px] xl:h-[350px] 2xl:h-[450px] m-auto"
               unoptimized
             />
             <div id="" className="absolute inset-0 shadow-2xl rounded-lg z-0"></div>
@@ -503,7 +503,7 @@ const HomeSection = () => {
         <div className='grid lg:grid-cols-3 grid-cols-1 gap-6 mt-8'>
           <div className='bg-gradient-to-br from-blue-50 to-white rounded-2xl p-5 shadow-2xl card'>
             <h1 className='font-semibold text-[2.488rem] p-3'>Step 1</h1>
-            <Image src="/assets/downloadApp.jpg" alt='Download_From_AppStore' width={300} height={400} className='w-[400px] h-[300px] 2xl:h-[400px] mx-auto rounded-2xl my-4' />
+            <Image src="/assets/downloadApp.jpg" alt='Download_From_AppStore' width={300} height={400} className='w-[400px]  xl:h-[300px] 2xl:h-[400px] mx-auto rounded-2xl my-4' />
             <p className='text-[16px] md:font-semibold  p-2 text-gray-700 text-center'>Download the DoorVi app from the App Store or Play Store.</p>
           </div>
           <div className='bg-gradient-to-br from-blue-50 to-white rounded-2xl p-5 shadow-2xl card'>
