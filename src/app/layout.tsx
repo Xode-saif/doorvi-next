@@ -40,7 +40,7 @@ export default function RootLayout({
       <head>
         {/* Google tag (gtag.js) */}
         <Script  async src="https://www.googletagmanager.com/gtag/js?id=G-4DM73NVM1M"></Script>
-        <Script id="gtag-init">
+        <Script id="gtag-init" strategy="lazyOnload">
          {` window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
