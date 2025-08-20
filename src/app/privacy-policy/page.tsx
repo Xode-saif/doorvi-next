@@ -1,11 +1,11 @@
-"use client"
 
 import { Metadata } from "next"
+import Link from "next/link";
 
 // Doorvi - Privacy Policy
-// export const metadata: Metadata = {
-//     title: "Doorvi - Privacy Policy",
-// };
+export const metadata: Metadata = {
+    title: "Doorvi - Privacy Policy",
+};
 
 export default function PrivatePolicy() {
     return (
@@ -296,18 +296,23 @@ export default function PrivatePolicy() {
                 <br />
                 15. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?<br />
                 <br />
-                If you have questions or comments about this notice, you may email us at <span onClick={() => {
+                If you have questions or comments about this notice, you may email us at 
+                {/* <span onClick={() => {
                     window.open('mailto:media@doorvi.cosubject=DoorVi')
-                }} style={{ color: "#0000EE", cursor: "pointer" }}>media@doorvi.co</span> or by post to:<br />
+                }} style={{ color: "#0000EE", cursor: "pointer" }}>media@doorvi.co</span> */}
+                <Link href="mailto:media@doorvi.cosubject=DoorVi"><span style={{ color: "#0000EE", cursor: "pointer" }}> media@doorvi.co</span></Link>
+                 or by post to:<br />
                 <br />
                 DoorVi support<br />
                 6 Floor Tower A, Office No 602, The I Thum Tower<br />
                 A-40,Sector-62, Noida, Gautam Buddha Nagar<br />
                 Uttar Pradesh, 201309<br />
                 India<br />
-                <span onClick={() => {
+                {/* <span onClick={() => {
                     window.open('mailto:media@doorvi.cosubject=DoorVi')
-                }} style={{ color: "#0000EE", cursor: "pointer" }}>media@doorvi.co</span></p>
+                }} style={{ color: "#0000EE", cursor: "pointer" }}>media@doorvi.co</span> */}
+                <Link href="mailto:media@doorvi.cosubject=DoorVi"><span style={{ color: "#0000EE", cursor: "pointer" }}>media@doorvi.co</span></Link>
+                </p>
         </div>
     )
 }

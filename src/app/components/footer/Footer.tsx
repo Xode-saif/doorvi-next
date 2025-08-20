@@ -97,7 +97,7 @@ const Footer = () => {
                                     <li className='hover:text-gray-600 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer'><Link href="/terms">Terms & Conditions</Link></li>
                                     <li className='hover:text-gray-600 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer'><Link href="/privacy-policy">Privacy Policy</Link></li>
                                     <li className='hover:text-gray-600 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer'>Cancellation policy</li>
-                                    <li className='leading-6 hover:text-gray-600 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer'><Link href="https://www.doorvi.co/refund-policy">Refund Policy</Link></li>
+                                    <li className='leading-6 hover:text-gray-600 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer'><Link href="/refund-policy">Refund Policy</Link></li>
                                 </ul>
                             </div>
                         </div>

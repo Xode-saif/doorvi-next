@@ -530,7 +530,7 @@ const HomeSection = () => {
           </p>
         </div>
         <IntegrationPartner />
-        <div className="relative m-auto h-[100vh]  ">
+        {/* <div className="relative m-auto h-[100vh]  ">
           <iframe
             loading='lazy'
             src={
@@ -550,7 +550,7 @@ const HomeSection = () => {
             allowFullScreen
             className="absolute top-0 left-0 w-full h-[80%]"
           ></iframe>
-        </div>
+        </div> */}
       </section>
       {/* doorvi for single home */}
       <section className='md:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 '>

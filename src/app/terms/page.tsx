@@ -1,10 +1,10 @@
-"use client"
 
 import { Metadata } from "next"
+import Link from "next/link"
 
-// export const metadata:Metadata = {
-//     title:"DoorVi - Terms of Use",
-// }
+export const metadata:Metadata = {
+    title:"DoorVi - Terms of Use",
+}
 export default function TermsAndCon() {
     return (
         <div className='py-20 max-w-[80%] flex flex-col itmes-center mx-auto '>
@@ -149,9 +149,10 @@ export default function TermsAndCon() {
             <p>A-40,Sector-62, Noida, Gautam Buddha Nagar</p>
             <p>Uttar Pradesh, 201309</p>
             <p>India</p>
-            <p><span onClick={() => {
+            {/* <p><span onClick={() => {
                 window.open('mailto:media@doorvi.cosubject=DoorVi')
-            }} style={{ color: "#0000EE", cursor: "pointer" }}>media@doorvi.co</span></p>
+            }} style={{ color: "#0000EE", cursor: "pointer" }}>media@doorvi.co</span></p> */}
+            <Link href="mailto:media@doorvi.cosubject=DoorVi"><span style={{ color: "#0000EE", cursor: "pointer" }}>media@doorvi.co</span></Link>
             <br />
             <br />
             <p>13. TERMINATION</p>
